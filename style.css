@@ -20,21 +20,31 @@ body{
 }
 .container{
     padding: 10px 5%;
+   
 }
 nav{
     display: flex ;
-    align-items: center;
+    width: 90%;
+    top: 0;
+    position: fixed;
+    align-items: stretch;
     justify-content: space-between;
+    background-color: #262626;
     flex-wrap: wrap;
+    overflow: visible;
+    border-radius: 0 0 3px 3px;
 }
 .logo{
+    padding-left: 10px;
     width: 80px;
 
 }
 nav ul li{
     display: inline-block;
     list-style: none;
+    padding-top: 10px;
     margin: 10px 20px;
+    
 
 }
 nav ul li a{
@@ -255,6 +265,10 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 35px;
+        padding-right: 10px;
+        padding-top: 15px;
+        cursor: pointer;
+       
     }
     nav ul{
         background: #ff004f;
