@@ -39,6 +39,9 @@ nav{
     width: 80px;
 
 }
+.bgp{
+    padding-right:10px ;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -256,7 +259,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     .header-text{
-        margin-top: 10%;
+        margin-top: 20%;
         font-size:16px;
     }
     .header-text h1{
