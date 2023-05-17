@@ -146,6 +146,19 @@ nav ul li a:hover::after{
 .tab-contents{
     display: none;
 }
+
+.tab-contents ul .category{
+color: #b54769;
+display: grid;
+margin-top: 2rem;
+grid-template-columns: 1;
+}
+
+.tab-contents ul div{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
 .tab-contents.active-tab{
     display: block;
 }
