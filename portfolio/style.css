@@ -20,21 +20,34 @@ body{
 }
 .container{
     padding: 10px 5%;
+   
 }
 nav{
     display: flex ;
-    align-items: center;
+    width: 90%;
+    top: 0;
+    position: fixed;
+    align-items: stretch;
     justify-content: space-between;
+    background-color: #262626;
     flex-wrap: wrap;
+    overflow: visible;
+    border-radius: 0 0 3px 3px;
 }
 .logo{
+    padding-left: 10px;
     width: 80px;
 
+}
+.bgp{
+    padding-right:10px ;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
+    padding-top: 10px;
     margin: 10px 20px;
+    
 
 }
 nav ul li a{
@@ -132,6 +145,19 @@ nav ul li a:hover::after{
 }
 .tab-contents{
     display: none;
+}
+
+.tab-contents ul .category{
+color: #b54769;
+display: grid;
+margin-top: 2rem;
+grid-template-columns: 1;
+}
+
+.tab-contents ul div{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
 }
 .tab-contents.active-tab{
     display: block;
@@ -246,7 +272,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     .header-text{
-        margin-top: 10%;
+        margin-top: 20%;
         font-size:16px;
     }
     .header-text h1{
@@ -255,6 +281,10 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 35px;
+        padding-right: 10px;
+        padding-top: 15px;
+        cursor: pointer;
+       
     }
     nav ul{
         background: #ff004f;
