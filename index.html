@@ -2,170 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravindu Ranasinghe</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/233918357a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/kr.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Frontend Developer</p>
-                <h1>Hi, I'm <span>Ravindu</span><br> from Sri Lanka</h1>
+    <!-- nav bar start -->
+    <header class="header">
+        <!-- nav logo -->
+        <a href="#" class="logo"><img src="Images/logo.png" alt="logo" class="logo"></a>
+        <!-- menu icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- menu list -->
+        <nav class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+    </header>
+    <!-- nav bar end -->
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello It's me</h3>
+            <h1>Ravindu Ranasinghe</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus labore incidunt, voluptatum voluptatibus a. Minus corrupti, aut distinctio vitae placeat, debitis officia consectetur atque dignissimos natus dolore. Minus, voluptas.</p>
+            <div class="social-media">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-github'></i></a>
             </div>
+        <a href="" class="btn">Download CV</a>
         </div>
-    </div>
-    <!----about---->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col1">
-                    <img src="images/about.jpg">
-                </div>
-                <div class="about-col2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>As a student at NSBM Green University, I discovered my passion for web designing and web development. I was always fascinated by the way websites work and how they are designed, and I knew that this was the field I wanted to pursue.
-                        Since then, I have been working hard to improve my skills and knowledge in this area. I have completed various courses and certifications in web designing and development, and I have also worked on several personal and professional projects that have allowed me to put my skills into practice.
-                        In addition to this, I have also been involved in various web development projects as part of my studies at NSBM Green University. These projects have allowed me to work with a team of fellow students and apply my skills in a real-world setting.
-                        Overall, my journey as a web designer and developer has been both challenging and rewarding. I have learned a lot about the industry and the skills required to succeed in this field. I am excited to continue to improve my skills and take on new challenges in the future.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Frontend<br></span> Web app Development</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Since 2023<br></span> Web Designing</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <span class="category">
-                                2017
-                            <span >GCE O/L</span>
-                            </span>
-                            <br>
-                            <div><p>Maths</p><span>A</span></div>
-                            <div><p>Science</p><span>A</span></div>
-                            <div><p>English</p><span>A</span></div>
-                            <div><p>Sinhala</p><span>A</span></div>
-                            <div><p>History</p><span>A</span></div>
-                            <div><p>Buddism</p><span>A</span></div>
-                            <div><p>Health & physical Science</p><span>A</span></div>
-                            <div><p>Civic. Education</p><span>A</span></div>
-                            <div><p>Art</p><span>B</span></div>
-                        
-                            <span class="category">
-                                2020
-                            <span >GCE A/L</span>
-                            </span>
-                            <br>
-                            <div><p>Biology</p><span>S</span></div>
-                            <div><p>Physics</p><span>S</span></div>
-                            <div><p>Chemestry</p><span>C</span></div>
-                            <li></li>
-                            <li><span>Since 2023<br></span> Undergraduate at NSBM Green University</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="home-img">
+            <img src="Images/home.png" alt="Profile-pic">
         </div>
-    </div>
-    <!----services---->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-              <div>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <a href="#">learn more</a>
-              </div>
-              <div>
-                <h2>Web Development</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <a href="#">learn more</a>
-              </div>    
-            </div>
-        </div>
-    </div>
-    <!----contact---->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>ranasinghe24125@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>0712854637</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/kumuditha.ranasinhge.5/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Downlaod CV</a>
-                </div>
-                <div class="contact-right"></div>
-                <form >
-                    <input type="text" name="Name" placeholder="your Name" required>
-                    <input type="email" name="email" placeholder="your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>copyright © Ravindu Ranasinghe.</p>
-        </div>
-    </div>
-
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-       
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
+    </section>
+    <!-- home section end -->
     
 </body>
 </html>
-
