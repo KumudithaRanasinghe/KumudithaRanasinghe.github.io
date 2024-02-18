@@ -501,7 +501,17 @@ span{
 @media (max-width: 1200px){
     html{
         font-size: 55%;
-
+    }
+    .contact form .input-box{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+    }
+    .contact form .input-box .input-field{
+        position: relative;
+        width: 100%;
+        margin: .8rem 0;
     }
 }
 @media (max-width: 991px){
@@ -510,6 +520,17 @@ span{
     }
     section{
         padding: 10rem 3% 2rem;
+    }
+    .contact form .input-box{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+    }
+    .contact form .input-box .input-field{
+        position: relative;
+        width: 100%;
+        margin: .8rem 0;
     }
     .footer{
         padding: 2rem 3%;
@@ -530,10 +551,11 @@ span{
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
     }
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
-    .navbar a{
+    .navbar li{
+        text-align: center;
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
@@ -566,6 +588,6 @@ span{
     }
     .contact form .input-box input{
         width: 100%;
-    }
+     }
 }
 
