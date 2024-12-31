@@ -56,3 +56,22 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+function createSnowflake() {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.innerHTML = '❅';
+    
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+    snowflake.style.opacity = Math.random();
+    snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+    
+    document.body.appendChild(snowflake);
+    
+    snowflake.addEventListener('animationend', () => {
+      snowflake.remove();
+    });
+  }
+
+  setInterval(createSnowflake, 100);
