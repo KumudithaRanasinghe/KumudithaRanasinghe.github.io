@@ -355,14 +355,21 @@ span{
     width: 20%;
 }
 .skills-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
-    width: 40%;
+    width: 10%;
 }
 .skills-column:nth-child(1) .skill-content .progress:nth-child(5) .bar span{
     width: 40%;
 }
 .skills-column:nth-child(1) .skill-content .progress:nth-child(6) .bar span{
+    width: 40%;
+}
+.skills-column:nth-child(1) .skill-content .progress:nth-child(7) .bar span{
     width: 80%;
 }
+.skills-column:nth-child(1) .skill-content .progress:nth-child(8) .bar span{
+    width: 20%;
+}
+
 .skills-column:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
     width: 50%;
 }
