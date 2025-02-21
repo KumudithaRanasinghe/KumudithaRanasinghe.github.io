@@ -24,6 +24,7 @@
 /* Remove underlines from links */
 a {
     text-decoration: none;
+    color: var(--primary-color);
   }
   
 
@@ -39,7 +40,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 9% 5rem;
 }
 
 /* navbar styles */
@@ -355,14 +356,21 @@ span{
     width: 20%;
 }
 .skills-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
-    width: 40%;
+    width: 10%;
 }
 .skills-column:nth-child(1) .skill-content .progress:nth-child(5) .bar span{
     width: 40%;
 }
 .skills-column:nth-child(1) .skill-content .progress:nth-child(6) .bar span{
+    width: 40%;
+}
+.skills-column:nth-child(1) .skill-content .progress:nth-child(7) .bar span{
     width: 80%;
 }
+.skills-column:nth-child(1) .skill-content .progress:nth-child(8) .bar span{
+    width: 20%;
+}
+
 .skills-column:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
     width: 50%;
 }
@@ -495,6 +503,47 @@ span{
 .footer-iconTop a:hover i{
     color: var(--primary-color);
 }
+
+/* Snowfall animation */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear;
+}
+
+@keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* celebration animation */
+
+.celebration-item {
+    position: fixed;
+    top: -10px;
+    color: gold;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
 
 /* breakpoints */
 
