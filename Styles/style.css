@@ -417,7 +417,7 @@ span{
 }
 
 .portfolio-box img {
-    width: 26vw;
+    width: 100%;
     height: 20vw;
     transition: .5s ease;
 }
@@ -719,11 +719,40 @@ span{
         height: 70vw;
         margin-top: 4rem;
     }
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-box img{
+        height: 30vw;
+    }
 }
+
+@media (max-width: 617px){
+    
+    .portfolio-container{
+        grid-template-columns:  1fr;
+    }
+    .portfolio-box img{
+        height: 50vw;
+    }
+}
+
+
 @media (max-width: 450px){
     html{
         font-size: 50%;
     }
+    .portfolio-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-box img{
+        height: 50vw;
+    }
+
+
     .contact form .input-box input{
         width: 100%;
      }
