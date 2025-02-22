@@ -392,7 +392,8 @@ span{
 /* portfolio */
 
 .portfolio {
-    background: var(--primary-bg-color);
+    min-height: auto;
+    padding-bottom: 7rem;
 }
 
 .portfolio h2 {
@@ -416,7 +417,8 @@ span{
 }
 
 .portfolio-box img {
-    width: 100%;
+    width: 26vw;
+    height: 20vw;
     transition: .5s ease;
 }
 
@@ -445,6 +447,11 @@ span{
     transform: translateY(0);
 }
 
+.portfolio-layer h3 {
+    font-size: 3.2rem;
+    color: var(--primary-color);
+}
+
 .portfolio-layer h4 {
     font-size: 3rem;
 }
@@ -452,6 +459,7 @@ span{
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    color: var(--secondary-bg-color);
 }
 
 .portfolio-layer a {
@@ -465,13 +473,17 @@ span{
 }
 .portfolio-layer a i {
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--secondary-bg-color);
 }
 
 /* contacts */
 .contact{
     min-height: auto;
     padding-bottom: 7rem;
+    background: var(--secondary-bg-color);
+}
+.contact h2 {
+    margin-bottom: 4rem;
 }
 .contact form{
     max-width: 70rem;
@@ -542,7 +554,6 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--secondary-bg-color);
 }
 .footer-text p{
     font-size: 1.3rem;
