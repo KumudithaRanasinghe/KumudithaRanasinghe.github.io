@@ -57,6 +57,37 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
+// contact form js
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxsWjTNU04lGM7fOdUF15UiWlSwSyQmiFPJm2n5TO1BysjhmlcfukRv9ET_ezRi53Y/exec';
+const form = document.forms['contact-form'];
+const statusMessage = document.getElementById('status-message');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    // Show loading message
+    statusMessage.innerHTML = 'Submitting form...';
+    
+    fetch(scriptURL, { 
+        method: 'POST', 
+        body: new FormData(form)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        statusMessage.innerHTML = 'Thank you! Form has been submitted successfully.';
+        form.reset(); // Clear the form
+        setTimeout(() => {
+            window.location.reload();
+        }, 2000); // Reload after 2 seconds
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+        statusMessage.innerHTML = 'Error submitting form. Please try again.';
+    });
+});
+
 // snowfall effect
 
 // function createSnowflake() {
