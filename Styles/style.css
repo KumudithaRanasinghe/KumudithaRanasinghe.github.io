@@ -542,6 +542,12 @@ span{
 .contact form .textarea-field textarea{
     resize: none;
 }
+.contact form .status-message{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 2rem 0;
+    text-align: center;
+}
 .contact form .btn-box.btns .btn{
     cursor: pointer;
 }
